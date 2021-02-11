@@ -24,7 +24,7 @@ namespace ChrisReminders
                 .ConfigureAppConfiguration(config =>
                 {
                     config.SetBasePath(Directory.GetCurrentDirectory());
-                    config.AddJsonFile("appsettings.json", false, true);
+                    config.AddJsonFile("appsettings.json", true, true);
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
@@ -44,8 +44,6 @@ namespace ChrisReminders
             );
 
             host.Run();
-
-
 
 
         }

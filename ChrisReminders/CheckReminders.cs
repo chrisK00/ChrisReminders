@@ -23,7 +23,7 @@ namespace ChrisReminders
                 {
                     Console.WriteLine($"Time to do: {item.Title}");
                     var sent = await _mailService.SendMail(
-                        new MailAddress("christianhunter707@gmail.com"),
+                        new MailAddress("christianktesting@gmail.com"),
                         item.Title,
                         item.Description);
                     if (sent)
